@@ -444,7 +444,7 @@ function sparkpost_recentFetchSuccess() {
       'return' => array('run_time'),
     ));
   }
-  catch (CiviCRM_API3_Exception $e) {
+  catch (CRM_Core_Exception $e) {
     $error = $e->getMessage();
   }
   if(!empty($error)) {
